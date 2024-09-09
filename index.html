@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargas de Syxs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #ecf0f1;
+            --tutorial-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .youtube-logo {
+            width: 30px;
+            height: 30px;
+        }
+
+        .ip-address {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--secondary-color);
+        }
+
+        .game-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .gif-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 400px;
+        }
+
+        .game-info {
+            padding: 1.5rem;
+        }
+
+        .download-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .download-btn, .tutorial-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn {
+            background-color: var(--primary-color);
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .tutorial-btn {
+            background-color: var(--tutorial-color);
+        }
+
+        .tutorial-btn:hover {
+            background-color: #c0392b;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .game-card {
+                flex-direction: row;
+            }
+
+            .game-card img, .game-card .gif-image {
+                width: 40%;
+                max-height: none;
+                object-fit: cover;
+            }
+
+            .game-info {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://www.youtube.com/@Syxl-Official" target="_blank">
+            <img src="https://www.youtube.com/s/desktop/7c155e84/img/favicon_144x144.png" alt="YouTube Logo" class="youtube-logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#games">Juegos</a></li>
+                <li><a href="#about">Acerca de</a></li>
+            </ul>
+        </nav>
+        <span class="ip-address" id="ip-address">Cargando IP...</span>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenido a la página de descargas de Syxs</h1>
+            <p>Aquí podrás descargar los juegos publicados en nuestro canal de YouTube.</p>
+        </section>
+
+        <section id="games">
+            <h2>Nuestros Juegos</h2>
+            <div class="game-card">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/477160/extras/HFF_Copper_World.gif?t=1725024378" alt="Human: Fall Flat">
+                <div class="game-info">
+                    <h3>Human: Fall Flat</h3>
+                    <p>Human: Fall Flat: Fall Flat es un juego de rompecabezas y plataformas donde controlas un personaje que debe superar distintos obstáculos.</p>
+                    <div class="download-buttons">
+                        <a href="https://gofile.io/d/5DSorn" class="download-btn">Descargar desde GoFile</a>
+                        <a href="https://www.mediafire.com/file/t9jpvamgyp6d6fh/Human_Fall_Flat_By_Syxs.zip/file" class="download-btn">Descargar desde MediaFire</a>
+                        <a href="#" class="tutorial-btn">Tutorial</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="game-card">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/extras/NewGIF_3.gif?t=1721132857" alt="BODYCAM" class="gif-image">
+                <div class="game-info">
+                    <h3>BODYCAM</h3>
+                    <p><strong>BODYCAM</strong> es un juego de disparos en primera persona multijugador ultra realista construido utilizando las últimas tecnologías del motor de juego Unreal Engine 5 de próxima generación. Desarrollado por dos entusiastas franceses de los videojuegos de 17 y 20 años, el juego fue diseñado para empujar los límites del realismo y el fotorrealismo: una experiencia verdaderamente revolucionaria para el género.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">Descargar desde GoFile</a>
+                        <a href="#" class="download-btn">Descargar desde MediaFire</a>
+                        <a href="#" class="tutorial-btn">Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1167630/extras/campaign.gif?t=1718799350" alt="Teardown" class="gif-image">
+                <div class="game-info">
+                    <h3>Teardown</h3>
+                    <p>Planea el robo perfecto resolviendo los problemas de forma creativa, usando la fuerza bruta y cualquier cosa a tu alrededor. Teardown cuenta con un entorno interactivo y totalmente destructible en el que la jugabilidad emergente y la libertad de los jugadores son las principales mecánicas de juego.</p>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">Descargar desde GoFile</a>
+                        <a href="#" class="download-btn">Descargar desde MediaFire</a>
+                        <a href="#" class="tutorial-btn">Tutorial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Syxs. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Código para obtener y mostrar la IP del usuario
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip-address').textContent = `Tu IP: ${data.ip}`;
+            })
+            .catch(error => {
+                console.error('Error al obtener la IP:', error);
+                document.getElementById('ip-address').textContent = 'IP no disponible';
+            });
+    </script>
+</body>
+</html>
